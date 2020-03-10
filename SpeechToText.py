@@ -3,7 +3,7 @@
 import speech_recognition as sr
 r = sr.Recognizer()
 
-soundfile=sr.AudioFile('test_short.wav')
+soundfile=sr.AudioFile('C:\@\T\git\SpeechToText\sample files\test_short.wav')
 with soundfile as source:
     audio = r.record(source)
 try:
