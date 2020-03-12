@@ -5,8 +5,9 @@
 
 import speech_recognition as sr
 r = sr.Recognizer()
-sound_file1 = ""
-soundfile=sr.AudioFile('short_test.wav') #the local file
+sound_file1 = "https://github.com/tvelichkovt/SpeechToText/raw/master/Sample_Files/SpeechToText_Sample.wav"
+soundfile=sr.AudioFile(sound_file1) #the local file
+
 with soundfile as source:
     audio = r.record(source)
 try:
@@ -15,6 +16,6 @@ try:
 except Exception as e:
     print("Exception: "+str(e))
     
-with open('soundfile_text.txt', 'w') as f: #, encoding="utf-8") for Bulgarian
+with open('SpeechToText_Output.txt', 'w') as f: #, encoding="utf-8") for Bulgarian
     print(soundfile_text, file=f)
 
