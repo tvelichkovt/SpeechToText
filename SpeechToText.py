@@ -5,7 +5,7 @@
 
 import speech_recognition as sr
 r = sr.Recognizer()
-sound_file1 = "https://github.com/tvelichkovt/SpeechToText/raw/master/Sample_Files/SpeechToText_Sample.wav"
+sound_file1 = "https://raw.githubusercontent.com/tvelichkovt/SpeechToText/master/Sample_Files/SpeechToText_Sample.wav"
 soundfile=sr.AudioFile(sound_file1) #the local file
 
 with soundfile as source:
