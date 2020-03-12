@@ -1,10 +1,11 @@
 '''
 #pip install SpeechRecognition
 '''
+# 1. Imports & Sample Files
 
 import speech_recognition as sr
 r = sr.Recognizer()
-
+sound_file1 = ""
 soundfile=sr.AudioFile('short_test.wav') #the local file
 with soundfile as source:
     audio = r.record(source)
